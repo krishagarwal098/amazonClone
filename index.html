@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDropshipping - Everything You Need, Delivered</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- TOP BANNER -->
+    <div class="top-banner">
+        <p>Free shipping on orders over $35 | <a href="#">Learn more</a></p>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <!-- Top Nav -->
+        <div class="nav-top">
+            <div class="nav-left">
+                <a href="#" class="logo">
+                    <span class="logo-text">MyDrop</span>
+                    <span class="logo-sub">.shop</span>
+                </a>
+
+                <div class="deliver-to">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <span class="deliver-label">Deliver to</span>
+                        <span class="deliver-location">United States</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-center">
+                <div class="search-bar">
+                    <select class="search-category" id="searchCategory">
+                        <option value="all">All</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="home">Home & Kitchen</option>
+                        <option value="books">Books</option>
+                        <option value="toys">Toys & Games</option>
+                        <option value="sports">Sports</option>
+                        <option value="beauty">Beauty</option>
+                    </select>
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search MyDropshipping">
+                    <button class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-item language-selector">
+                    <img src="https://flagcdn.com/w20/us.png" alt="US" class="flag-icon">
+                    <select class="lang-select">
+                        <option>EN</option>
+                        <option>ES</option>
+                        <option>FR</option>
+                    </select>
+                </div>
+
+                <a href="#" class="nav-item account-link" id="accountBtn">
+                    <span class="nav-line1">Hello, Sign in</span>
+                    <span class="nav-line2">Account & Lists <i class="fas fa-caret-down"></i></span>
+                </a>
+
+                <a href="#" class="nav-item returns-link">
+                    <span class="nav-line1">Returns</span>
+                    <span class="nav-line2">& Orders</span>
+                </a>
+
+                <a href="#" class="nav-item cart-link" id="cartBtn">
+                    <div class="cart-icon-wrapper">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                    <span class="cart-text">Cart</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom Nav -->
+        <div class="nav-bottom">
+            <button class="all-menu-btn" id="allMenuBtn">
+                <i class="fas fa-bars"></i> All
+            </button>
+            <nav class="nav-links">
+                <a href="#">Today's Deals</a>
+                <a href="#">Customer Service</a>
+                <a href="#">Registry</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Sell</a>
+                <a href="#" class="nav-deal">Best Sellers</a>
+                <a href="#">New Releases</a>
+                <a href="#">Pharmacy</a>
+                <a href="#">Groceries</a>
+                <a href="#">Fashion</a>
+            </nav>
+            <a href="#" class="nav-promo">
+                <i class="fas fa-tag"></i> Shop deals in Electronics
+            </a>
+        </div>
+    </header>
+
+    <!-- SIDE MENU -->
+    <div class="side-menu-overlay" id="sideMenuOverlay"></div>
+    <div class="side-menu" id="sideMenu">
+        <div class="side-menu-header">
+            <i class="fas fa-user-circle"></i>
+            <span>Hello, Sign in</span>
+        </div>
+        <div class="side-menu-content">
+            <div class="side-menu-section">
+                <h3>Trending</h3>
+                <a href="#">Best Sellers</a>
+                <a href="#">New Releases</a>
+                <a href="#">Movers & Shakers</a>
+            </div>
+            <div class="side-menu-divider"></div>
+            <div class="side-menu-section">
+                <h3>Digital Content & Devices</h3>
+                <a href="#">Electronics</a>
+                <a href="#">Computers</a>
+                <a href="#">Smart Home</a>
+            </div>
+            <div class="side-menu-divider"></div>
+            <div class="side-menu-section">
+                <h3>Shop By Department</h3>
+                <a href="#">Clothing</a>
+                <a href="#">Home & Kitchen</a>
+                <a href="#">Beauty & Personal Care</a>
+                <a href="#">Toys & Games</a>
+                <a href="#">Sports & Outdoors</a>
+                <a href="#">Automotive</a>
+            </div>
+            <div class="side-menu-divider"></div>
+            <div class="side-menu-section">
+                <h3>Help & Settings</h3>
+                <a href="#">Your Account</a>
+                <a href="#">Customer Service</a>
+                <a href="#">Sign In</a>
+            </div>
+        </div>
+        <button class="side-menu-close" id="sideMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <!-- Hero Carousel -->
+        <section class="hero-carousel">
+            <div class="carousel-container" id="heroCarousel">
+                <div class="carousel-slide active" style="background: linear-gradient(135deg, #232f3e 0%, #37475a 100%);">
+                    <div class="carousel-content">
+                        <h1>Summer Sale</h1>
+                        <p>Up to 70% off on selected items</p>
+                        <a href="#" class="carousel-btn">Shop Now</a>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background: linear-gradient(135deg, #0f1111 0%, #1a472a 100%);">
+                    <div class="carousel-content">
+                        <h1>New Electronics</h1>
+                        <p>Latest gadgets and tech deals</p>
+                        <a href="#" class="carousel-btn">Explore</a>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background: linear-gradient(135deg, #3b1a00 0%, #cc5500 100%);">
+                    <div class="carousel-content">
+                        <h1>Home Essentials</h1>
+                        <p>Everything for your home at great prices</p>
+                        <a href="#" class="carousel-btn">Discover</a>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background: linear-gradient(135deg, #1a1a4e 0%, #4834d4 100%);">
+                    <div class="carousel-content">
+                        <h1>Fashion Deals</h1>
+                        <p>Trending styles for everyone</p>
+                        <a href="#" class="carousel-btn">Shop Fashion</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-arrow carousel-prev" id="carouselPrev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-arrow carousel-next" id="carouselNext">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </section>
+
+        <!-- Category Cards -->
+        <section class="category-cards">
+            <div class="cards-grid">
+                <div class="category-card">
+                    <h3>Electronics & Gadgets</h3>
+                    <div class="card-grid-images">
+                        <div class="card-grid-item" data-category="electronics">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Phones" alt="Phones">
+                            <span>Phones</span>
+                        </div>
+                        <div class="card-grid-item" data-category="electronics">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Laptops" alt="Laptops">
+                            <span>Laptops</span>
+                        </div>
+                        <div class="card-grid-item" data-category="electronics">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Tablets" alt="Tablets">
+                            <span>Tablets</span>
+                        </div>
+                        <div class="card-grid-item" data-category="electronics">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Accessories" alt="Accessories">
+                            <span>Accessories</span>
+                        </div>
+                    </div>
+                    <a href="#" class="card-link">See more</a>
+                </div>
+
+                <div class="category-card">
+                    <h3>Fashion Trends</h3>
+                    <div class="card-grid-images">
+                        <div class="card-grid-item">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Men" alt="Men">
+                            <span>Men's</span>
+                        </div>
+                        <div class="card-grid-item">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Women" alt="Women">
+                            <span>Women's</span>
+                        </div>
+                        <div class="card-grid-item">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Kids" alt="Kids">
+                            <span>Kids</span>
+                        </div>
+                        <div class="card-grid-item">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Shoes" alt="Shoes">
+                            <span>Shoes</span>
+                        </div>
+                    </div>
+                    <a href="#" class="card-link">See more</a>
+                </div>
+
+                <div class="category-card">
+                    <h3>Home & Kitchen</h3>
+                    <div class="card-grid-images">
+                        <div class="card-grid-item">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Kitchen" alt="Kitchen">
+                            <span>Kitchen</span>
+                        </div>
+                        <div class="card-grid-item">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Decor" alt="Decor">
+                            <span>Decor</span>
+                        </div>
+                        <div class="card-grid-item">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Bedding" alt="Bedding">
+                            <span>Bedding</span>
+                        </div>
+                        <div class="card-grid-item">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Storage" alt="Storage">
+                            <span>Storage</span>
+                        </div>
+                    </div>
+                    <a href="#" class="card-link">See more</a>
+                </div>
+
+                <div class="category-card">
+                    <h3>Beauty Picks</h3>
+                    <div class="card-single-image">
+                        <img src="https://via.placeholder.com/300x280/f0f0f0/333?text=Beauty+Collection" alt="Beauty">
+                    </div>
+                    <a href="#" class="card-link">See more</a>
+                </div>
+
+                <div class="category-card">
+                    <h3>Deals & Savings</h3>
+                    <div class="card-single-image">
+                        <img src="https://via.placeholder.com/300x280/ff9900/fff?text=Up+to+50%25+OFF" alt="Deals">
+                    </div>
+                    <a href="#" class="card-link">Shop all deals</a>
+                </div>
+
+                <div class="category-card">
+                    <h3>Sports & Outdoors</h3>
+                    <div class="card-grid-images">
+                        <div class="card-grid-item">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Fitness" alt="Fitness">
+                            <span>Fitness</span>
+                        </div>
+                        <div class="card-grid-item">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Camping" alt="Camping">
+                            <span>Camping</span>
+                        </div>
+                        <div class="card-grid-item">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Cycling" alt="Cycling">
+                            <span>Cycling</span>
+                        </div>
+                        <div class="card-grid-item">
+                            <img src="https://via.placeholder.com/150x150/f0f0f0/333?text=Running" alt="Running">
+                            <span>Running</span>
+                        </div>
+                    </div>
+                    <a href="#" class="card-link">See more</a>
+                </div>
+
+                <div class="category-card">
+                    <h3>Toys & Games</h3>
+                    <div class="card-single-image">
+                        <img src="https://via.placeholder.com/300x280/f0f0f0/333?text=Toys" alt="Toys">
+                    </div>
+                    <a href="#" class="card-link">Shop now</a>
+                </div>
+
+                <div class="category-card">
+                    <h3>Sign in for the best experience</h3>
+                    <div class="sign-in-card">
+                        <button class="sign-in-btn" id="heroSignInBtn">Sign in securely</button>
+                    </div>
+                    <a href="#" class="card-link">Create an account</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Sellers Carousel -->
+        <section class="product-carousel-section">
+            <h2 class="section-title">Best Sellers in Electronics</h2>
+            <div class="product-carousel-wrapper">
+                <button class="product-carousel-arrow product-carousel-prev" data-carousel="bestSellers">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="product-carousel" id="bestSellersCarousel">
+                    <!-- Products loaded by JS -->
+                </div>
+                <button class="product-carousel-arrow product-carousel-next" data-carousel="bestSellers">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Deal of the Day -->
+        <section class="deal-of-day">
+            <div class="deal-header">
+                <h2 class="section-title">Deal of the Day</h2>
+                <a href="#" class="see-all-deals">See all deals</a>
+            </div>
+            <div class="deals-grid" id="dealsGrid">
+                <!-- Deals loaded by JS -->
+            </div>
+        </section>
+
+        <!-- Recommended Products -->
+        <section class="product-carousel-section">
+            <h2 class="section-title">Recommended for You</h2>
+            <div class="product-carousel-wrapper">
+                <button class="product-carousel-arrow product-carousel-prev" data-carousel="recommended">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="product-carousel" id="recommendedCarousel">
+                    <!-- Products loaded by JS -->
+                </div>
+                <button class="product-carousel-arrow product-carousel-next" data-carousel="recommended">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- More Category Cards -->
+        <section class="category-cards">
+            <div class="cards-grid">
+                <div class="category-card">
+                    <h3>Gaming Accessories</h3>
+                    <div class="card-single-image">
+                        <img src="https://via.placeholder.com/300x280/f0f0f0/333?text=Gaming" alt="Gaming">
+                    </div>
+                    <a href="#" class="card-link">See more</a>
+                </div>
+                <div class="category-card">
+                    <h3>Pet Supplies</h3>
+                    <div class="card-single-image">
+                        <img src="https://via.placeholder.com/300x280/f0f0f0/333?text=Pet+Supplies" alt="Pets">
+                    </div>
+                    <a href="#" class="card-link">See more</a>
+                </div>
+                <div class="category-card">
+                    <h3>Automotive</h3>
+                    <div class="card-single-image">
+                        <img src="https://via.placeholder.com/300x280/f0f0f0/333?text=Auto" alt="Auto">
+                    </div>
+                    <a href="#" class="card-link">See more</a>
+                </div>
+                <div class="category-card">
+                    <h3>Books</h3>
+                    <div class="card-single-image">
+                        <img src="https://via.placeholder.com/300x280/f0f0f0/333?text=Books" alt="Books">
+                    </div>
+                    <a href="#" class="card-link">See more</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Products -->
+        <section class="product-carousel-section">
+            <h2 class="section-title">Trending Now</h2>
+            <div class="product-carousel-wrapper">
+                <button class="product-carousel-arrow product-carousel-prev" data-carousel="trending">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="product-carousel" id="trendingCarousel">
+                    <!-- Products loaded by JS -->
+                </div>
+                <button class="product-carousel-arrow product-carousel-next" data-carousel="trending">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- PRODUCT MODAL -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="" alt="" id="modalImage">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modalTitle"></h2>
+                    <div class="modal-rating" id="modalRating"></div>
+                    <div class="modal-price">
+                        <span class="modal-current-price" id="modalPrice"></span>
+                        <span class="modal-original-price" id="modalOriginalPrice"></span>
+                        <span class="modal-discount" id="modalDiscount"></span>
+                    </div>
+                    <div class="modal-prime">
+                        <i class="fas fa-check"></i> FREE Delivery
+                    </div>
+                    <div class="modal-stock" id="modalStock">In Stock</div>
+                    <div class="modal-quantity">
+                        <label>Qty:</label>
+                        <select id="modalQuantity">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart-btn" id="modalAddToCart">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                    <button class="buy-now-btn" id="modalBuyNow">Buy Now</button>
+                    <div class="modal-features">
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure transaction</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-undo"></i>
+                            <span>30-day returns</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Ships from MyDrop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty" id="cartEmpty">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+                <a href="#" class="continue-shopping">Continue Shopping</a>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none;">
+            <div class="cart-subtotal">
+                <span>Subtotal (<span id="cartItemCount">0</span> items):</span>
+                <span class="cart-total-price" id="cartTotalPrice">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- SIGN IN MODAL -->
+    <div class="modal-overlay" id="signInModal">
+        <div class="sign-in-modal-content">
+            <button class="modal-close" id="signInModalClose"><i class="fas fa-times"></i></button>
+            <div class="sign-in-form">
+                <h2>Sign In</h2>
+                <div class="form-group">
+                    <label>Email or phone number</label>
+                    <input type="email" id="signInEmail" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="signInPassword" placeholder="Enter your password">
+                </div>
+                <button class="sign-in-submit-btn" id="signInSubmit">Sign In</button>
+                <div class="sign-in-divider">
+                    <span>New to MyDrop?</span>
+                </div>
+                <button class="create-account-btn">Create your account</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTIFICATION TOAST -->
+    <div class="toast-notification" id="toastNotification">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Added to cart!</span>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-back-to-top" id="backToTop">
+            <span>Back to top</span>
+        </div>
+
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Get to Know Us</h4>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">About MyDrop</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">MyDrop Devices</a>
+                <a href="#">MyDrop Science</a>
+            </div>
+            <div class="footer-column">
+                <h4>Make Money with Us</h4>
+                <a href="#">Sell products on MyDrop</a>
+                <a href="#">Sell on MyDrop Business</a>
+                <a href="#">Become an Affiliate</a>
+                <a href="#">Advertise Your Products</a>
+                <a href="#">Self-Publish with Us</a>
+                <a href="#">Host a MyDrop Hub</a>
+            </div>
+            <div class="footer-column">
+                <h4>Payment Products</h4>
+                <a href="#">MyDrop Business Card</a>
+                <a href="#">Shop with Points</a>
+                <a href="#">Reload Your Balance</a>
+                <a href="#">MyDrop Currency Converter</a>
+            </div>
+            <div class="footer-column">
+                <h4>Let Us Help You</h4>
+                <a href="#">Your Account</a>
+                <a href="#">Your Orders</a>
+                <a href="#">Shipping Rates & Policies</a>
+                <a href="#">Returns & Replacements</a>
+                <a href="#">Manage Your Content</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <span class="logo-text">MyDrop</span>
+                <span class="logo-sub">.shop</span>
+            </div>
+            <div class="footer-locale">
+                <button class="locale-btn">
+                    <i class="fas fa-globe"></i> English
+                </button>
+                <button class="locale-btn">
+                    <i class="fas fa-dollar-sign"></i> USD - U.S. Dollar
+                </button>
+                <button class="locale-btn">
+                    <img src="https://flagcdn.com/w20/us.png" alt="US"> United States
+                </button>
+            </div>
+        </div>
+
+        <div class="footer-legal">
+            <div class="footer-legal-links">
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Consumer Health Data Privacy Disclosure</a>
+                <a href="#">Your Ads Privacy Choices</a>
+            </div>
+            <p>© 2024, MyDropshipping.com, Inc. or its affiliates</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
